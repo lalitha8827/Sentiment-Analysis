@@ -1,0 +1,117 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body
+    {
+      background-color:#E4E9F2;
+    }
+    .jumbotron
+    {
+      background-color:white;
+      margin-top:50px;
+      margin-left:150px;
+      height:170px;
+      width:800px;
+    }
+    .jumbotron2
+    {
+      background-color:white;
+      margin-top:50px;
+      margin-left:150px;
+      height:400px;
+      width:800px;
+      padding:20px;
+    }
+    h2
+    {
+      margin-top:-60px;
+    }
+    .sample .tag.category-path
+    {
+      padding: 5px 10px;
+      display: inline-block;
+      max-width: 137px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      border-radius: 12px;
+      background-color: rgba(0,136,255,.1);
+      color: #007de3;
+    }
+    .wordcloud
+    {
+      margin-top:20px;
+      text-align:center;
+    }
+    .button {
+      display: inline-block;
+      padding: 15px 25px;
+      font-size: 24px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      outline: none;
+      color: #fff;
+      background-color: #4CAF50;
+      border: none;
+      border-radius: 15px;
+ 
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  transform: translateY(4px);
+}
+.but
+{
+    color:white;
+}
+.fonts
+{
+    color:green
+}
+.fontred
+{
+  color:red;
+ }
+  </style>
+  <title>counts</title>
+</head>
+<body>
+  <div class="header" id="topheader">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+          <a class="navbar-brand" href="#">Product Sentiment</a>
+        </div>
+    </nav>
+  </div>
+  <div class="container">
+    <div class="jumbotron">
+      <h2>Product Sentiment</h2>
+      <p>Classifies and counts product reviews and opinions in English as positive or negative according to their sentiment.</p>
+      <div class="sample">
+      <span class="tag category-path">Positive</span>
+      <span class="tag category-path">Negative</span>
+    </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="jumbotron2">
+        <h3>According to the prediction from the top reviews. . . . .,(if reviews>1000,then displays the result of top 1000 reviews)</h3>
+        <h4 class="fonts">Total Positive Reviews are : {{positive}}</h4>
+        <h4 class="fontred">Total Negaive Reviews are : {{negative}}</h4>
+        <div class="wordcloud">
+            <h4>To see the reviews, click here</h4>
+            <button class="button"><a class="but" href="/review">Reviews</a></button>
+          <h4>For wordcloud of the reviews, click here</h4>
+          <button class="button button2"><a class="but" href="/showcloud">WordCloud</button>
+        </div>
+    </div>
+  </div>
+</body>
+</html>
