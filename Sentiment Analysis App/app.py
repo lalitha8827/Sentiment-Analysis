@@ -14,7 +14,7 @@ import os
 from wordcloud import WordCloud
 from PIL import Image
 import pickle
-#i
+import numpy
 app= Flask(__name__)
 
 @app.route('/',methods=['GET'])
@@ -196,13 +196,14 @@ def index():
 @cross_origin()
 def show_wordcloud():
     if(request.method=="GET"):
+	n=np.random.randint(500)
         counts()
         list1=counts.lists
         all = " ".join(i for i in list1)
         wc = WordCloud().generate(all)
-        wc.to_file("static/wordcloud.png")
+	wc.to_file("static/wordcloud"+str(n)+".png")
         #filename=Image.open("static/wordcloud.png")
         #filename.show()
-        return render_template('show.html')
+        return render_template('show.html',n1=str(n))
 if __name__ == "__main__":
     app.run(port=8000,debug=True)
