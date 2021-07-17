@@ -12,7 +12,7 @@ Created my own data set with approx. 12000 records
 2.It has 5 reviews.![2021-06-14 (2)](https://user-images.githubusercontent.com/68632263/121844777-19b73d80-cd02-11eb-9136-86a674a1c341.png)
 
 
-3.Our app home page will be like this![2021-06-14 (3)](https://user-images.githubusercontent.com/68632263/121844928-55ea9e00-cd02-11eb-8356-af2b6d8ec8b3.png)
+3.Home page will be like this![2021-06-14 (3)](https://user-images.githubusercontent.com/68632263/121844928-55ea9e00-cd02-11eb-8356-af2b6d8ec8b3.png)
 
 
 4.Now paste the copied url here and search![2021-06-14 (4)](https://user-images.githubusercontent.com/68632263/121845065-86cad300-cd02-11eb-8c99-62edf76ef9d3.png)
